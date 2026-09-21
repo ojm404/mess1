@@ -12,7 +12,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write # needed to commit puzzle-data.js back to the repo
+  contents: write # needed to commit README.js back to the repo
 
 jobs:
   build-puzzle:
