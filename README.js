@@ -29,10 +29,10 @@ jobs:
       - name: Generate today's puzzle
         env:
           TMDB_KEY: ${{ secrets.TMDB_KEY }}
-        run: node daily-puzzle.js
+        run: node README.js
 
       - name: Move output to repo root
-        run: mv out/puzzle-data.js puzzle-data.js
+        run: mv out/README.js README.js
 
       - name: Commit and push if it changed
         run: |
