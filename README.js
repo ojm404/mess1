@@ -38,6 +38,6 @@ jobs:
         run: |
           git config user.name "ojm404"
           git config user.email "oliviajmontague@gmail.com"
-          git add puzzle-data.js
+          git add README.js
           git diff --staged --quiet || git commit -m "Daily puzzle: $(date -u +%Y-%m-%d)"
           git push
