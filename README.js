@@ -36,8 +36,8 @@ jobs:
 
       - name: Commit and push if it changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "ojm404"
+          git config user.email "oliviajmontague@gmail.com"
           git add puzzle-data.js
           git diff --staged --quiet || git commit -m "Daily puzzle: $(date -u +%Y-%m-%d)"
           git push
